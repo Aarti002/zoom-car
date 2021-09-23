@@ -246,25 +246,32 @@ body {
     width: 100%;
     height: 350px;
     background-color: rgba(94, 91, 91, 0.7);
-    
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    margin-top: -2.2rem;
+    text-align: center;
     align-items: center;
 }
 
-#home .supermilers .promo .image.logo {
+#home .supermilers .promo .image1.logo {
     background-repeat: no-repeat;
     height: 80px;
     width: 100px;
-    margin-top: 40px;
+    margin-top: 46px;
+    margin-left: 43rem;
     background-size: cover;
     background-position: 20px 0;
     margin-bottom: 16px;
+}
+
+#home .supermilers .features .items .box .image1.points {
+    background-size: 60px;
+    background-position: 16px 10px;
+}
+#home .supermilers .features .items .box .image1 {
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 75px;
+    background-size: 275px;
+    margin: auto;
 }
 
 #home .supermilers .features {
@@ -320,3 +327,114 @@ body {
     color: #70ad4d;
     font-weight: 600;
 }
+
+
+
+
+.container{
+    margin-left: 15rem;
+    margin-top: -8rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;    
+   
+  }
+  
+  .image{
+     
+      width: 32rem;
+      height: 15rem;
+    display: none;
+  }
+
+  .container .image .details{
+      margin-top: 3rem;
+      text-align: center;
+      font-size: .87rem;
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  /* Next & previous buttons */
+  #prev{  
+    position: absolute;
+    top: 43%;
+    left: 0;
+    cursor: pointer;
+    padding: 16px;
+    color: rgb(82, 49, 49);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  #next{
+    position: absolute;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    padding: 16px;
+    color: rgb(139, 63, 63);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  #prev:hover, #next:hover {
+    background: rgba(0, 0, 0, 0.5);
+  } 
+  
+  .dots{
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .dot{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(83, 72, 131);
+    border-radius: 50%;
+    /* transition from one do to the next */
+    transition: background-color 0.6s ease;
+  }
+  
+  /* We create this class with JavaScript. It makes the current dot darker gray */
+  .active{
+    background-color: #717171;
+  } 
+  
+  /* create fade animation when switching between images */
+  .fade{
+  /* Animation support for different browsers */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+  }
+  
+  @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+  } 
+  
+  @media(max-width:768px){
+      .container{
+          width: 100%;
+      }
+  }
+  
+  
